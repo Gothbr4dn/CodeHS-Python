@@ -1,9 +1,10 @@
-user_role = input("Are you an administrator, teacher, or student?: ")
+user_role = input()
 
-if (user_role == "teacher" and "administrator"):
-    print("Administrators and teachers get keys")
-    
-elif (user_role == "student"):
-    print("Students do not get keys!")
+if user_role == 'teacher' or user_role == 'administrator':
+  print('Administrators and teachers get keys!')
+
+elif user_role == 'student':
+  print('Students do not get keys!')
+
 else:
-    print("You can only be an administrator, teacher, or student!")
+  print('You can only be an administrator, teacher, or student!')
